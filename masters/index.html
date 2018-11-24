@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="tsmasters">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ultimate Typescript: Masters</title>
+    <link rel="stylesheet" href="http://localhost:3000/static/css/prism.css">
+    <link rel="stylesheet" href="http://localhost:3000/static/css/styles.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <h1>Ultimate Typescript: Masters</h1>
+        <header class="header">
+            <ul class="header__labels">
+                <li>
+                    <a ui-sref="es67" ui-sref-active="active-link">Understanding and Typing "this"</a>
+                </li>
+                <li>
+                    <a ui-sref="primitive" ui-sref-active="active-link">Type Queries</a>
+                </li>
+                <li>
+                    <a ui-sref="special"></a>
+                </li>
+                <li>
+                    <a ui-sref="aliases"></a>
+                </li>
+                <li>
+                    <a ui-sref="enums"></a>
+                </li>
+                <li>
+                    <a ui-sref="interfaces"></a>
+                </li>
+                <li>
+                    <a ui-sref="classes"></a>
+                </li>
+                <li>
+                    <a ui-sref="generics"></a>
+                </li>
+            </ul>
+        </header>
+        <div ui-view class="content"></div>
+    </div>
+
+    <div class="app"></div>
+    <script src="dist/bundle.js"></script>
+    <script src="http://localhost:3000/static/lib/angular.js"></script>
+    <script src="http://localhost:3000/static/lib/angular-ui-router.js"></script>
+    <script src="http://localhost:3000/static/lib/angular-sanitize.js"></script>
+    <script src="src/layout/app.js"></script>
+    <script src="src/layout/components/understanding_and_typing_this/config.js"></script>
+    <script src="src/layout/components/understanding_and_typing_this/methods.js"></script>
+    <script src="src/layout/components/understanding_and_typing_this/a-this-keyword-primer/script.js"></script>
+    <script src="http://localhost:3000/static/lib/prism.js"></script>
+</body>
+
+</html>

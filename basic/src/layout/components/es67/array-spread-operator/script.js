@@ -1,7 +1,7 @@
 var spreads = {
     template: `
 		<div>
-            <h1>Array and Object Spreads</h1>
+            <h1>Array Spread Operator</h1>
             <h3>ES5 way</h3>
             <pre class="line-numbers language-javascript">
                 <code class="language-javascript">
@@ -29,7 +29,6 @@ var spreads = {
             </pre>
         </div>`,
     controller: function ($window) {
-        arrayObjectSpreads();
         window.highlightCode();
     }
 };

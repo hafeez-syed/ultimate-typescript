@@ -1,4 +1,4 @@
-function anyTypes() {
+const anyType = function() {
   console.log("... 1: Any Types ...");
 
   const coupon: string = "pizza25";
@@ -10,4 +10,6 @@ function anyTypes() {
   const couponMessage: string = `Final coupon is ${normalizeCoupon(coupon)}`;
 
   console.log(couponMessage); // Final coupon is PIZZA25
-}
+};
+
+anyType();

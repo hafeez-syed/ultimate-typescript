@@ -19,7 +19,6 @@ var booleanType = {
             </pre>
         </div>`,
     controller: function ($window) {
-        booleanTypes();
         window.highlightCode();
     }
 };

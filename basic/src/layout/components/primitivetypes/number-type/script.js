@@ -18,7 +18,6 @@ var numberType = {
                 console.log(cost); // 27.5
                 </code>
             </pre>`;
-        numberTypes();
         window.highlightCode();
     }
 };

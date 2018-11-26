@@ -1,7 +1,7 @@
 var destructuring = {
 	template: `
 		<div>
-            <h1>Destructuring Objects</h1>
+            <h1>Destructuring Arrays and Objects</h1>
             <h3>ES5 way</h3>
             <pre class="line-numbers language-javascript">
                 <code class="language-javascript">
@@ -40,7 +40,8 @@ var destructuring = {
 			    }
 			
 			    // Destructuring property from {pizzaName, pizzaToppings}
-			    const { pizzaName } = newOrder(pizzza);
+				const { pizzaName } = newOrder(pizzza);
+				console.log("pizzaName::", pizzaName); // pizzaName:: pepperoni
 			
 			    // Array Destructuring
 			    const pizzaToppings = ['olives', 'cheese', 'tomato'];
@@ -57,7 +58,6 @@ var destructuring = {
             </pre>
         </div>`,
 	controller: function ($window) {
-		destructuringObjects();
 		window.highlightCode();
 	}
 };

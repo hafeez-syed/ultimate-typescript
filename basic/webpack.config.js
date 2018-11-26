@@ -5,25 +5,28 @@ const {
 } = require('awesome-typescript-loader');
 
 module.exports = {
-  entry: './src/layout/app.js',
+  entry: {
+    code: './src/code/app.ts',
+    layout: './src/layout/app.js'
+  },
   output: {
-    filename: "js-bundle.js",
-    path: __dirname + "./dist"
+    filename: "[name]-bundle.js",
+    path: path.resolve(__dirname + "./dist/")
   },
   resolve: {
-    extensions: [".ts", ".js"]
+    extensions: ["*", ".ts", ".js"]
   },
   devtool: 'inline-source-map',
   mode: 'development',
   module: {
     rules: [{
         test: /\.ts$/,
-        loader: "awesome-typescript-loader",
+        loader: ["awesome-typescript-loader"],
         exclude: /node_module/
       },
       {
         test: /\.css$/,
-        loader: "css-loader",
+        loader: ["css-loader"],
         exclude: /node_module/
       },
     ]

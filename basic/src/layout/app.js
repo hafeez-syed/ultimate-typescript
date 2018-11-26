@@ -41,8 +41,8 @@ require(srcDir + 'es67/arrow-functions/script');
 require(srcDir + 'es67/default-function-params/script');
 require(srcDir + 'es67/object-literal/script');
 require(srcDir + 'es67/rest-params/script');
-require(srcDir + 'es67/array-object-spread/script');
-require(srcDir + 'es67/destructuring-objects/script');
+require(srcDir + 'es67/array-spread-operator/script');
+require(srcDir + 'es67/destructuring-arrays-and-objects/script');
 
 // Primitive Types
 require(srcDir + 'primitivetypes/config');

@@ -73,7 +73,6 @@ var arrowFunction = {
             </pre>
         </div>`,
     controller: function ($window) {
-        arrowFunctions();
         window.highlightCode();
     }
 };

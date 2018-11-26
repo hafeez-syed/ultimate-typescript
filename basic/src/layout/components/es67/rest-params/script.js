@@ -29,7 +29,6 @@ var restParams = {
             </pre>
         </div>`,
     controller: function ($window) {
-        restParameters();
         window.highlightCode();
     }
 };

@@ -36,11 +36,18 @@ var objectLiteral = {
                 const toppings = ['pepperoni'];
             
                 const order = { pizza, toppings };
+
+                function createOrder(pizza: any, toppings: string[]) {
+                    return { pizza, toppings };
+                }
+                
+                console.log("Create ORDER");
+                console.log(createOrder(pizza, toppings));
+                
                 </code>
             </pre>
         </div>`,
     controller: function ($window) {
-        objectLiterals();
         window.highlightCode();
     }
 };

@@ -31,7 +31,6 @@ var defaultFunctionParams = {
             </pre>
         </div>`,
     controller: function ($window) {
-        defaultFunctionParameters();
         window.highlightCode();
     }
 };

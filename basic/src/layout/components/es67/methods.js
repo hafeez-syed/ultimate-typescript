@@ -1,5 +1,5 @@
 var es67Methods = {
-    template: `
+	template: `
 		<div>
 			<ul>
 				<li ui-sref-active="active-menu">
@@ -15,10 +15,10 @@ var es67Methods = {
 					<a ui-sref="es67.restParameters">Rest parameters</a>
 				</li>
 				<li ui-sref-active="active-menu">
-					<a ui-sref="es67.arrayObjectSpread">Array and Object Spreads</a>
+					<a ui-sref="es67.arrayObjectSpread">Array Spread Operator</a>
 				</li>
 				<li ui-sref-active="active-menu">
-					<a ui-sref="es67.destructuringObjects">Destructuring Objects</a>
+					<a ui-sref="es67.destructuringObjects">Destructuring Arrays and Objects</a>
 				</li>
 			</ul>
 		</div>
@@ -26,5 +26,5 @@ var es67Methods = {
 };
 
 angular
-    .module('es67')
-    .component('es67Methods', es67Methods);
+	.module('es67')
+	.component('es67Methods', es67Methods);

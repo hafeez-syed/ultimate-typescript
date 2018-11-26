@@ -1,4 +1,4 @@
-function arrowFunctions() {
+const arrowFunctions = function() {
   console.log("... 1: Arrow Functions ...");
   const pizzas = [{ name: "Pepperoni", toppings: ["pepperoni"] }];
   console.log("Pizzas:", pizzas);
@@ -58,4 +58,6 @@ function arrowFunctions() {
   pizza.getName();
   pizza.sTimeout();
   pizza.tTimeout();
-}
+};
+
+arrowFunctions();

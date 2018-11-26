@@ -1,9 +1,9 @@
 var anyType = {
 	template: `<div ng-bind-html="myTemplate"></div>`,
 	controller: function ($scope, $window) {
-		$scope.myTemplate = `<h1>Number Type</h1>
-            <pre class="line-numbers language-javascript">
-                <code class="language-javascript">
+		$scope.myTemplate = `<h1>Any Type</h1>
+            <pre class="line-numbers language-typescript">
+                <code class="language-typescript">
                 let pizzaCost: number = 5;
                 let pizzaToppings: number = 15;
             
@@ -18,7 +18,6 @@ var anyType = {
                 console.log(cost); // 27.5
                 </code>
             </pre>`;
-		numberTypes();
 		window.highlightCode();
 	}
 };

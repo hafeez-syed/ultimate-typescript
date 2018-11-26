@@ -17,7 +17,6 @@ var stringType = {
             </pre>
         </div>`,
     controller: function ($window) {
-        stringTypes();
         window.highlightCode();
     }
 };

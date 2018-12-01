@@ -1,5 +1,5 @@
 var stringType = {
-    template: `
+  template: `
 		<div>
 		    <h1>String Type</h1>
             <pre class="line-numbers language-typescript">
@@ -16,22 +16,21 @@ var stringType = {
                 </code>
             </pre>
         </div>`,
-    controller: function ($window) {
-        window.highlightCode();
-    }
+  controller: function() {
+    window.printAndHighlightCode("stringTypes");
+  }
 };
 
 angular
-    .module('primitive')
-    .component('stringType', stringType)
-    .config(function ($stateProvider) {
-        $stateProvider
-            .state('primitive.stringType', {
-                url: '/stringType',
-                views: {
-                    'details@primitive': {
-                        component: 'stringType'
-                    }
-                }
-            });
+  .module("primitive")
+  .component("stringType", stringType)
+  .config(function($stateProvider) {
+    $stateProvider.state("primitive.stringType", {
+      url: "/stringType",
+      views: {
+        "details@primitive": {
+          component: "stringType"
+        }
+      }
     });
+  });

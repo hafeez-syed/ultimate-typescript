@@ -101,9 +101,10 @@ body {
 }
 
 .layout-details {
-    left: 23%;
+    left: 21%;
     padding: 25px;
     position: absolute;
+    width: 79%;
 }
 
 .tabs {
@@ -174,6 +175,7 @@ pre.line-numbers {
 code[class*="language-"] {
     font-size: 16px;
     line-height: 2;
+    tab-size: 3;
 }
 
 .left-align {

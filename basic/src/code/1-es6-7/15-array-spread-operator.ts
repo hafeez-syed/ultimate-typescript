@@ -20,4 +20,4 @@ const arrayObjectSpreads = function() {
   console.log(allTopppings);
 };
 
-arrayObjectSpreads();
+window.TSNamespace.arrayObjectSpreads = arrayObjectSpreads;

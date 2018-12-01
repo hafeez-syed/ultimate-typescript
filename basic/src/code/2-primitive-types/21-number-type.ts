@@ -14,4 +14,5 @@ const numberTypes = function() {
 
   console.log(`Pizza costs: ${cost}`); // 13
 };
-numberTypes();
+
+window.TSNamespace.numberTypes = numberTypes;

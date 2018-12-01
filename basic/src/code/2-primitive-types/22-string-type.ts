@@ -12,4 +12,4 @@ const stringTypes = function() {
   console.log(couponMessage); // Final coupon is PIZZA25
 };
 
-stringTypes();
+window.TSNamespace.stringTypes = stringTypes;

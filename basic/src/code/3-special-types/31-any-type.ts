@@ -1,15 +1,16 @@
 const anyType = function() {
-  console.log("... 1: Any Types ...");
+  console.log("... 1: Any Type ...");
 
-  const coupon: string = "pizza25";
+  let coupon: any;
 
-  function normalizeCoupon(code: string): string {
-    return code.toUpperCase();
-  }
+  coupon = 25;
+  console.log("coupon:", coupon);
 
-  const couponMessage: string = `Final coupon is ${normalizeCoupon(coupon)}`;
+  coupon = "pizza25";
+  console.log("coupon:", coupon);
 
-  console.log(couponMessage); // Final coupon is PIZZA25
+  coupon = true;
+  console.log("coupon:", coupon);
 };
 
-anyType();
+window.TSNamespace.anyType = anyType;

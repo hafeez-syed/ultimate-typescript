@@ -9,13 +9,13 @@ var specialMethods = {
 					<a ui-sref="special.implicitExplicitTypes">Implicit vs Explicit Types</a>
 				</li>
 				<li ui-sref-active="active-menu">
-					<a ui-sref="special.void">Void type</a>
+					<a ui-sref="special.voidType">Void type</a>
 				</li>
 				<li ui-sref-active="active-menu">
-					<a ui-sref="special.never">Never type</a>
+					<a ui-sref="special.neverType">Never type</a>
 				</li>
 				<li ui-sref-active="active-menu">
-					<a ui-sref="special.null">Null, Undefined, Strict Null checks</a>
+					<a ui-sref="special.nullUndefinedStrict">Null, Undefined, Strict Null checks</a>
 				</li>
 				<li ui-sref-active="active-menu">
 					<a ui-sref="special.union">Union and Literal types</a>

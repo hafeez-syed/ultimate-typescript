@@ -57,8 +57,8 @@ var destructuring = {
                 </code>
             </pre>
         </div>`,
-	controller: function ($window) {
-		window.highlightCode();
+	controller: function () {
+		window.printAndHighlightCode('destructuringObjects');
 	}
 };
 

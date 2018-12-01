@@ -1,5 +1,5 @@
 var special = {
-    template: `
+	template: `
 		<div class="layout">
 			<div class="layout-methods">
 				<div ui-view="methods"></div>
@@ -8,29 +8,6 @@ var special = {
 		</div>
 	`
 };
-
-special.$inject = ['$window'];
-
-/*angular
-    .module('special')
-    .component('specialtypec', special)
-    .config(function ($stateProvider, $urlRouterProvider) {
-        $stateProvider
-            .state('specialtype', {
-                redirectTo: 'specialtype.any',
-                url: '/specialtypes',
-                views: {
-                    // default view
-                    '@': {
-                        component: 'specialtypec'
-                    },
-                    'methods@specialtype': {
-                        component: 'specialtypeMethods'
-                    }
-                }
-            });
-    });*/
-
 
 angular
 	.module('special')

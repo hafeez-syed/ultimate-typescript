@@ -1,7 +1,7 @@
-var anyType = {
-	template: `<div ng-bind-html="myTemplate"></div>`,
-	controller: function ($scope, $window) {
-		$scope.myTemplate = `<h1>Any Type</h1>
+var numberType = {
+    template: `<div ng-bind-html="myTemplate"></div>`,
+    controller: function ($scope, $window) {
+        $scope.myTemplate = `<h1>Number Type</h1>
             <pre class="line-numbers language-typescript">
                 <code class="language-typescript">
                 let pizzaCost: number = 5;
@@ -15,24 +15,24 @@ var anyType = {
             
                 const cost: number  = calculatePrice(pizzaCost, pizzaToppings);
             
-                console.log(cost); // 27.5
+                console.log(cost); // 13
                 </code>
             </pre>`;
-		window.highlightCode();
-	}
+        window.printAndHighlightCode('numberTypes');
+    }
 };
 
 angular
-	.module('special')
-	.component('anyType', anyType)
-	.config(function ($stateProvider) {
-		$stateProvider
-			.state('special.anyType', {
-				url: '/anyType',
-				views: {
-					'details@special': {
-						component: 'anyType'
-					}
-				}
-			});
-	});
+    .module('primitive')
+    .component('numberType', numberType)
+    .config(function ($stateProvider) {
+        $stateProvider
+            .state('primitive.numberType', {
+                url: '/numberType',
+                views: {
+                    'details@primitive': {
+                        component: 'numberType'
+                    }
+                }
+            });
+    });

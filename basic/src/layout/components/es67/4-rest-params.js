@@ -1,5 +1,5 @@
 var restParams = {
-    template: `
+  template: `
 		<div>
             <h1>Rest Parameters</h1>
             <h3>ES5 way</h3>
@@ -28,22 +28,21 @@ var restParams = {
                 </code>
             </pre>
         </div>`,
-    controller: function ($window) {
-        window.highlightCode();
-    }
+  controller: function() {
+    window.printAndHighlightCode("restParameters");
+  }
 };
 
 angular
-    .module('es67')
-    .component('restParams', restParams)
-    .config(function ($stateProvider) {
-        $stateProvider
-            .state('es67.restParameters', {
-                url: '/restParameters',
-                views: {
-                    'details@es67': {
-                        component: 'restParams'
-                    }
-                }
-            });
+  .module("es67")
+  .component("restParams", restParams)
+  .config(function($stateProvider) {
+    $stateProvider.state("es67.restParameters", {
+      url: "/restParameters",
+      views: {
+        "details@es67": {
+          component: "restParams"
+        }
+      }
     });
+  });

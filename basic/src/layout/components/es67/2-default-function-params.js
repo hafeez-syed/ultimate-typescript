@@ -1,5 +1,5 @@
 var defaultFunctionParams = {
-    template: `
+  template: `
 		<div>
             <h1>Default Function Parameters</h1>
             <h3>ES5 way</h3>
@@ -30,22 +30,21 @@ var defaultFunctionParams = {
                 </code>
             </pre>
         </div>`,
-    controller: function ($window) {
-        window.highlightCode();
-    }
+  controller: function() {
+    window.printAndHighlightCode("defaultFunctionParameters");
+  }
 };
 
 angular
-    .module('es67')
-    .component('defaultFunctionParams', defaultFunctionParams)
-    .config(function ($stateProvider) {
-        $stateProvider
-            .state('es67.defaultFunctionParameters', {
-                url: '/defaultFunctionParameters',
-                views: {
-                    'details@es67': {
-                        component: 'defaultFunctionParams'
-                    }
-                }
-            });
+  .module("es67")
+  .component("defaultFunctionParams", defaultFunctionParams)
+  .config(function($stateProvider) {
+    $stateProvider.state("es67.defaultFunctionParameters", {
+      url: "/defaultFunctionParameters",
+      views: {
+        "details@es67": {
+          component: "defaultFunctionParams"
+        }
+      }
     });
+  });

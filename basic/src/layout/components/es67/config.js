@@ -9,8 +9,6 @@ var es67 = {
 	`
 };
 
-es67.$inject = ['$window'];
-
 angular
     .module('es67')
     .component('es67', es67)

@@ -1,3 +1,5 @@
+window.TSNamespace = window.TSNamespace || {};
+
 var angular = require('angular');
 require('@uirouter/angularjs');
 require('angular-sanitize');
@@ -37,21 +39,25 @@ var srcDir = './components/';
 // ES6&7
 require(srcDir + 'es67/config');
 require(srcDir + 'es67/methods');
-require(srcDir + 'es67/arrow-functions/script');
-require(srcDir + 'es67/default-function-params/script');
-require(srcDir + 'es67/object-literal/script');
-require(srcDir + 'es67/rest-params/script');
-require(srcDir + 'es67/array-spread-operator/script');
-require(srcDir + 'es67/destructuring-arrays-and-objects/script');
+require(srcDir + 'es67/1-arrow-functions');
+require(srcDir + 'es67/2-default-function-params');
+require(srcDir + 'es67/3-object-literal');
+require(srcDir + 'es67/4-rest-params');
+require(srcDir + 'es67/5-array-spread-operator');
+require(srcDir + 'es67/6-destructuring-arrays-and-objects');
 
 // Primitive Types
 require(srcDir + 'primitivetypes/config');
 require(srcDir + 'primitivetypes/methods');
-require(srcDir + 'primitivetypes/number-type/script');
-require(srcDir + 'primitivetypes/string-type/script');
-require(srcDir + 'primitivetypes/boolean-type/script');
+require(srcDir + 'primitivetypes/1-number-type');
+require(srcDir + 'primitivetypes/2-string-type');
+require(srcDir + 'primitivetypes/3-boolean-type');
 
 // Special Types
 require(srcDir + 'specialTypes/config');
 require(srcDir + 'specialTypes/methods');
-require(srcDir + 'specialTypes/any-type/script');
+require(srcDir + 'specialTypes/1-any-type');
+require(srcDir + 'specialTypes/2-implicit-explicit-types');
+require(srcDir + 'specialTypes/3-void-type');
+require(srcDir + 'specialTypes/4-never-type');
+require(srcDir + 'specialTypes/5-null-undefined-strict');

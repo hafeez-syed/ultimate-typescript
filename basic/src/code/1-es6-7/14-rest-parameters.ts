@@ -25,4 +25,4 @@ const restParameters = function() {
   console.log(sumTotal);
 };
 
-restParameters();
+window.TSNamespace.restParameters = restParameters;

@@ -7,12 +7,8 @@ var primitive = {
 			<div class="layout-details" ui-view="details"></div>
 		</div>
     `,
-    controller: function ($window) {
-        window.highlightCode();
-    }
+    controller: function () {}
 };
-
-primitive.$inject = ['$window'];
 
 angular
     .module('primitive')

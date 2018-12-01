@@ -60,4 +60,4 @@ const arrowFunctions = function() {
   pizza.tTimeout();
 };
 
-arrowFunctions();
+window.TSNamespace.arrowFunctions = arrowFunctions;

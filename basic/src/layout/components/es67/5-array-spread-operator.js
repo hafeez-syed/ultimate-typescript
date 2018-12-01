@@ -28,8 +28,8 @@ var spreads = {
                 </code>
             </pre>
         </div>`,
-    controller: function ($window) {
-        window.highlightCode();
+    controller: function () {
+        window.printAndHighlightCode('arrayObjectSpreads');
     }
 };
 

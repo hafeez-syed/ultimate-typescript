@@ -21,4 +21,4 @@ const defaultFunctionParameters = function() {
   console.log("Multiplying a * b:", multiplying());
 };
 
-defaultFunctionParameters();
+window.TSNamespace.defaultFunctionParameters = defaultFunctionParameters;

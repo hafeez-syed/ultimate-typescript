@@ -50,4 +50,4 @@ const destructuringObjects = function() {
   logToppings(pizzaToppings);
 };
 
-destructuringObjects();
+window.TSNamespace.destructuringObjects = destructuringObjects;

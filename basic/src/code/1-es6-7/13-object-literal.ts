@@ -45,4 +45,4 @@ const objectLiterals = function() {
   console.log(createOrder(pizza, toppings));
 };
 
-objectLiterals();
+window.TSNamespace.objectLiterals = objectLiterals;

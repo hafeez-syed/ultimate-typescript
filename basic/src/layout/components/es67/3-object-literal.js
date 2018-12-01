@@ -47,8 +47,8 @@ var objectLiteral = {
                 </code>
             </pre>
         </div>`,
-    controller: function ($window) {
-        window.highlightCode();
+    controller: function () {
+        window.printAndHighlightCode('objectLiterals');
     }
 };
 

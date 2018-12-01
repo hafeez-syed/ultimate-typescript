@@ -1,5 +1,5 @@
 var arrowFunction = {
-    template: `
+  template: `
 		<div>
             <h1>Arrow Functions and Implicit returns</h1>
             <pre class="line-numbers">
@@ -72,22 +72,21 @@ var arrowFunction = {
                 </code>
             </pre>
         </div>`,
-    controller: function ($window) {
-        window.highlightCode();
-    }
+  controller: function() {
+    window.printAndHighlightCode("arrowFunctions");
+  }
 };
 
 angular
-    .module('es67')
-    .component('arrowFunction', arrowFunction)
-    .config(function ($stateProvider) {
-        $stateProvider
-            .state('es67.arrowFunction', {
-                url: '/arrowFunction',
-                views: {
-                    'details@es67': {
-                        component: 'arrowFunction'
-                    }
-                }
-            });
+  .module("es67")
+  .component("arrowFunction", arrowFunction)
+  .config(function($stateProvider) {
+    $stateProvider.state("es67.arrowFunction", {
+      url: "/arrowFunction",
+      views: {
+        "details@es67": {
+          component: "arrowFunction"
+        }
+      }
     });
+  });

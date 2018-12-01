@@ -1,46 +1,38 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="tsbasics">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Ultimate Typescript: Basics</title>
-    <link rel="stylesheet" href="./css/prism.css">
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
+    <link rel="stylesheet" href="./css/prism.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-<body>
-
+  <body>
     <div class="main">
-        <h1>Ultimate Typescript: Basics</h1>
-        <header class="header">
-            <ul class="header__labels">
-                <li>
-                    <a ui-sref="es67" ui-sref-active="active-link">ES6/7 and Typescript</a>
-                </li>
-                <li>
-                    <a ui-sref="primitive" ui-sref-active="active-link">Primitve types</a>
-                </li>
-                <li>
-                    <a ui-sref="special" ui-sref-active="active-link">Special Types</a>
-                </li>
-                <li>
-                    <a ui-sref="aliases">Type Aliases and Assertions</a>
-                </li>
-                <li>
-                    <a ui-sref="enums">Exploring Enums</a>
-                </li>
-                <li>
-                    <a ui-sref="interfaces">Diving into Interfaces</a>
-                </li>
-                <li>
-                    <a ui-sref="classes">Classes, Properties and Inheritance</a>
-                </li>
-                <li>
-                    <a ui-sref="generics">Generics and Overloads</a>
-                </li>
-            </ul>
-        </header>
-        <div ui-view class="content"></div>
+      <h1>Ultimate Typescript: Basics</h1>
+      <header class="header">
+        <ul class="header__labels">
+          <li>
+            <a ui-sref="es67" ui-sref-active="active-link"
+              >ES6/7 and Typescript</a
+            >
+          </li>
+          <li>
+            <a ui-sref="primitive" ui-sref-active="active-link"
+              >Primitve types</a
+            >
+          </li>
+          <li>
+            <a ui-sref="special" ui-sref-active="active-link">Special Types</a>
+          </li>
+          <li><a ui-sref="aliases">Type Aliases and Assertions</a></li>
+          <li><a ui-sref="enums">Exploring Enums</a></li>
+          <li><a ui-sref="interfaces">Diving into Interfaces</a></li>
+          <li><a ui-sref="classes">Classes, Properties and Inheritance</a></li>
+          <li><a ui-sref="generics">Generics and Overloads</a></li>
+        </ul>
+      </header>
+      <div ui-view class="content"></div>
     </div>
 
     <div class="app"></div>
@@ -48,20 +40,31 @@
     <script type="text/javascript" src="./lib/prism.js"></script>
 
     <script>
-        var int;
-        window.highlightCode = function () {
-            clearJunk();
-            int = setInterval(() => {
-                Prism.highlightAll();
-            }, 50);
-        };
+      window.TSNamespace = window.TSNamespace || {};
+      var int;
 
-        function clearJunk() {
-            if (int) {
-                clearInterval(int);
-            }
+      function clearJunk() {
+        console.clear();
+        if (int) {
+          clearInterval(int);
         }
-    </script>
-</body>
+      }
 
+      function highLightCode() {
+        int = setInterval(() => {
+          Prism.highlightAll();
+        }, 50);
+      }
+
+      window.printAndHighlightCode = function(functionName) {
+        clearJunk();
+
+        if (functionName) {
+          window.TSNamespace[functionName]();
+        }
+
+        highLightCode();
+      };
+    </script>
+  </body>
 </html>

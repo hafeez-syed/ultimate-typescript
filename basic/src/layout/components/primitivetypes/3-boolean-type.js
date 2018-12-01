@@ -1,5 +1,5 @@
 var booleanType = {
-    template: `
+  template: `
 		<div>
 		    <h1>Boolean Type</h1>
             <pre class="line-numbers language-typescript">
@@ -18,22 +18,21 @@ var booleanType = {
                 </code>
             </pre>
         </div>`,
-    controller: function ($window) {
-        window.highlightCode();
-    }
+  controller: function() {
+    window.printAndHighlightCode("booleanTypes");
+  }
 };
 
 angular
-    .module('primitive')
-    .component('booleanType', booleanType)
-    .config(function ($stateProvider) {
-        $stateProvider
-            .state('primitive.booleanType', {
-                url: '/booleanType',
-                views: {
-                    'details@primitive': {
-                        component: 'booleanType'
-                    }
-                }
-            });
+  .module("primitive")
+  .component("booleanType", booleanType)
+  .config(function($stateProvider) {
+    $stateProvider.state("primitive.booleanType", {
+      url: "/booleanType",
+      views: {
+        "details@primitive": {
+          component: "booleanType"
+        }
+      }
     });
+  });

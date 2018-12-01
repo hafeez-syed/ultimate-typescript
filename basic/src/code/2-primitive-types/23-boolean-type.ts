@@ -14,4 +14,4 @@ const booleanTypes = function() {
   }
 };
 
-booleanTypes();
+window.TSNamespace.booleanTypes = booleanTypes;

@@ -42,9 +42,10 @@ const arrowFunctions = function() {
       console.log(this);
     },
     sTimeout: function() {
+      var _this = this;
       setTimeout(function() {
         console.log("--- ES5 way ---");
-        console.log(this);
+        console.log(_this);
       }, 100);
     },
     tTimeout: function() {

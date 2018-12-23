@@ -10,11 +10,11 @@ var nullUndefinedStrict = {
 						coupon = null;
 					}
 				
-					console.log(coupon);
+					console.log(coupon); // pizza25 
 				
 					removeCoupon();
 				
-					console.log(coupon);			  
+					console.log(coupon); // null  
 				</code>
 			</pre>`;
 		window.printAndHighlightCode('nullUndefinedStrict');

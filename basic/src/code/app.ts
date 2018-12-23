@@ -21,3 +21,5 @@ import "./3-special-types/32-implicit-explicit-types";
 import "./3-special-types/33-void-type";
 import "./3-special-types/34-never-type";
 import "./3-special-types/35-null-undefined-strict";
+import "./3-special-types/36-union-literal-types";
+import "./3-special-types/37-function-types";

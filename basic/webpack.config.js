@@ -1,13 +1,11 @@
-const HtmlWebPackPlugin = require('html-webpack-plugin');
+const HtmlWebPackPlugin = require("html-webpack-plugin");
 const path = require("path");
-const {
-  CheckerPlugin
-} = require('awesome-typescript-loader');
+const { CheckerPlugin } = require("awesome-typescript-loader");
 
 module.exports = {
   entry: {
-    code: './src/code/app.ts',
-    layout: './src/layout/app.js'
+    code: "./src/code/app.ts",
+    layout: "./src/layout/app.js"
   },
   output: {
     filename: "[name]-bundle.js",
@@ -16,10 +14,11 @@ module.exports = {
   resolve: {
     extensions: ["*", ".ts", ".js"]
   },
-  devtool: 'inline-source-map',
-  mode: 'development',
+  devtool: "inline-source-map",
+  mode: "development",
   module: {
-    rules: [{
+    rules: [
+      {
         test: /\.ts$/,
         loader: ["awesome-typescript-loader"],
         exclude: /node_module/
@@ -28,8 +27,12 @@ module.exports = {
         test: /\.css$/,
         loader: ["css-loader"],
         exclude: /node_module/
-      },
+      }
     ]
+  },
+  tslint: {
+    failOnHint: true,
+    configuration: require("./tslint.json")
   },
   devServer: {
     port: 4000
@@ -41,7 +44,7 @@ module.exports = {
     new CheckerPlugin(),
     new HtmlWebPackPlugin({
       inject: true,
-      template: './index.1.html',
+      template: "./index.1.html"
     })
   ]
 };

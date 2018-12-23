@@ -30,7 +30,7 @@ var specialMethods = {
 					<a ui-sref="special.typedFunctions">Typed Functions and Default Params</a>
 				</li>
 				<li ui-sref-active="active-menu">
-					<a ui-sref="special.object">Object Types</a>
+					<a ui-sref="special.objectTypes">Object Types</a>
 				</li>
 				<li ui-sref-active="active-menu">
 					<a ui-sref="special.generics">Array Types and Generics</a>

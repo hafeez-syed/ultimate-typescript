@@ -25,3 +25,4 @@ import "./3-special-types/36-union-literal-types";
 import "./3-special-types/37-function-types";
 import "./3-special-types/38-functions-and-opitonal-arguments";
 import "./3-special-types/39-typed-functions-and-default-params";
+import "./3-special-types/40-object-types";

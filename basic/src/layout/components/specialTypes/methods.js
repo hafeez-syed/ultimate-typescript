@@ -27,7 +27,7 @@ var specialMethods = {
 					<a ui-sref="special.optionalArgs">Functions and Optional Arguments</a>
 				</li>
 				<li ui-sref-active="active-menu">
-					<a ui-sref="special.default">Typed Functions and Default Params</a>
+					<a ui-sref="special.typedFunctions">Typed Functions and Default Params</a>
 				</li>
 				<li ui-sref-active="active-menu">
 					<a ui-sref="special.object">Object Types</a>

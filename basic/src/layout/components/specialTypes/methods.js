@@ -36,7 +36,7 @@ var specialMethods = {
 					<a ui-sref="special.arrayTypesGenerics">Array Types and Generics</a>
 				</li>
 				<li ui-sref-active="active-menu">
-					<a ui-sref="special.tuple">Tuple Types for Arrays</a>
+					<a ui-sref="special.tupleTypesForArrays">Tuple Types for Arrays</a>
 				</li>
 			</ul>
 		</div>

@@ -54,3 +54,4 @@ require(srcDir + "specialTypes/4-never-type");
 require(srcDir + "specialTypes/5-null-undefined-strict");
 require(srcDir + "specialTypes/6-union-and-literal-types");
 require(srcDir + "specialTypes/7-function-types");
+require(srcDir + "specialTypes/8-function-optional-args");

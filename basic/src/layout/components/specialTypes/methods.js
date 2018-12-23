@@ -1,5 +1,5 @@
 var specialMethods = {
-	template: `
+  template: `
 		<div>
 			<ul>
 				<li ui-sref-active="active-menu">
@@ -18,10 +18,10 @@ var specialMethods = {
 					<a ui-sref="special.nullUndefinedStrict">Null, Undefined, Strict Null checks</a>
 				</li>
 				<li ui-sref-active="active-menu">
-					<a ui-sref="special.union">Union and Literal types</a>
+					<a ui-sref="special.unionAndLiteralTypes">Union and Literal types</a>
 				</li>
 				<li ui-sref-active="active-menu">
-					<a ui-sref="special.functionr">Function Types</a>
+					<a ui-sref="special.functionTypes">Function Types</a>
 				</li>
 				<li ui-sref-active="active-menu">
 					<a ui-sref="special.optional">Functions and Optional Arguments</a>
@@ -43,6 +43,4 @@ var specialMethods = {
 	`
 };
 
-angular
-	.module('special')
-	.component('specialMethods', specialMethods);
+angular.module("special").component("specialMethods", specialMethods);

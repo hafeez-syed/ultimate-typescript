@@ -27,12 +27,39 @@ module.exports = {
         test: /\.css$/,
         loader: ["css-loader"],
         exclude: /node_module/
+      },
+      {
+        test: /\.ts$/,
+        enforce: "pre",
+        use: [
+          {
+            loader: "tslint-loader",
+            options: {
+              configuration: {
+                rules: {
+                  quotemark: [true, "double"]
+                }
+              },
+              configFile: "./tslint.json",
+              emitErrors: false,
+              failOnHint: false,
+              typeCheck: false,
+              fix: false,
+              tsconfigFile: "./tsconfig.json",
+              formattersDirectory: "node_modules/tslint-loader/formatters/",
+              fileOutput: {
+                dir: "./tslintOutput/",
+                ext: "xml",
+                clean: true,
+                header:
+                  '<?xml version="1.0" encoding="utf-8"?>\n<checkstyle version="5.7">',
+                footer: "</checkstyle>"
+              }
+            }
+          }
+        ]
       }
     ]
-  },
-  tslint: {
-    failOnHint: true,
-    configuration: require("./tslint.json")
   },
   devServer: {
     port: 4000

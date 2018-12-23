@@ -57,3 +57,4 @@ require(srcDir + "specialTypes/7-function-types");
 require(srcDir + "specialTypes/8-function-optional-args");
 require(srcDir + "specialTypes/9-typed-functions-and-default-params");
 require(srcDir + "specialTypes/10-object-types");
+require(srcDir + "specialTypes/11-array-types-generics");

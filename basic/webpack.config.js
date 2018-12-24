@@ -71,7 +71,7 @@ module.exports = {
     new CheckerPlugin(),
     new HtmlWebPackPlugin({
       inject: true,
-      template: "./index.1.html"
+      template: "./index.html"
     })
   ]
 };

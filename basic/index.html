@@ -1,77 +1,80 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="tsbasics">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Ultimate Typescript: Basics</title>
-    <link rel="stylesheet" href="http://localhost:3000/static/css/prism.css">
-    <link rel="stylesheet" href="http://localhost:3000/static/css/styles.css">
-</head>
+    <link rel="stylesheet" href="./css/prism.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-<body>
-
+  <body>
     <div class="main">
-        <h1>Ultimate Typescript: Basics</h1>
-        <header class="header">
-            <ul class="header__labels">
-                <li>
-                    <a ui-sref="es67" ui-sref-active="active-link">ES6/7 and Typescript</a>
-                </li>
-                <li>
-                    <a ui-sref="primitive" ui-sref-active="active-link">Primitve types</a>
-                </li>
-                <li>
-                    <a ui-sref="special" ui-sref-active="active-link">Special Types</a>
-                </li>
-                <li>
-                    <a ui-sref="aliases">Type Aliases and Assertions</a>
-                </li>
-                <li>
-                    <a ui-sref="enums">Exploring Enums</a>
-                </li>
-                <li>
-                    <a ui-sref="interfaces">Diving into Interfaces</a>
-                </li>
-                <li>
-                    <a ui-sref="classes">Classes, Properties and Inheritance</a>
-                </li>
-                <li>
-                    <a ui-sref="generics">Generics and Overloads</a>
-                </li>
-            </ul>
-        </header>
-        <div ui-view class="content"></div>
+      <h1>Ultimate Typescript: Basics</h1>
+      <header class="header">
+        <ul class="header__labels">
+          <li>
+            <a ui-sref="es67" ui-sref-active="active-link"
+              >ES6/7 and Typescript</a
+            >
+          </li>
+          <li>
+            <a ui-sref="primitive" ui-sref-active="active-link"
+              >Primitve types</a
+            >
+          </li>
+          <li>
+            <a ui-sref="special" ui-sref-active="active-link">Special Types</a>
+          </li>
+          <li>
+            <a ui-sref="aliases" ui-sref-active="active-link"
+              >Type Aliases and Assertions</a
+            >
+          </li>
+          <li>
+            <a ui-sref="interfaces" ui-sref="active-link"
+              >Diving into Interfaces</a
+            >
+          </li>
+          <li>
+            <a ui-sref="classes" ui-sref="active-link"
+              >Classes, Properties and Inheritance</a
+            >
+          </li>
+        </ul>
+      </header>
+      <div ui-view class="content"></div>
     </div>
 
     <div class="app"></div>
-    <script src="dist/bundle.js"></script>
 
-    <script src="http://localhost:3000/static/lib/angular.js"></script>
-    <script src="http://localhost:3000/static/lib/angular-ui-router.js"></script>
-    <script src="http://localhost:3000/static/lib/angular-sanitize.js"></script>
+    <script type="text/javascript" src="./lib/prism.js"></script>
 
-    <script src="src/layout/app.js"></script>
+    <script>
+      window.TSNamespace = window.TSNamespace || {};
+      var int;
 
-    <script src="src/layout/components/es67/config.js"></script>
-    <script src="src/layout/components/es67/methods.js"></script>
-    <script src="src/layout/components/es67/arrow-functions/script.js"></script>
-    <script src="src/layout/components/es67/default-function-params/script.js"></script>
-    <script src="src/layout/components/es67/object-literal/script.js"></script>
-    <script src="src/layout/components/es67/rest-params/script.js"></script>
-    <script src="src/layout/components/es67/array-object-spread/script.js"></script>
-    <script src="src/layout/components/es67/destructuring-objects/script.js"></script>
+      function clearJunk() {
+        console.clear();
+        if (int) {
+          clearInterval(int);
+        }
+      }
 
-    <script src="src/layout/components/primitivetypes/config.js"></script>
-    <script src="src/layout/components/primitivetypes/methods.js"></script>
-    <script src="src/layout/components/primitivetypes/number-type/script.js"></script>
-    <script src="src/layout/components/primitivetypes/string-type/script.js"></script>
-    <script src="src/layout/components/primitivetypes/boolean-type/script.js"></script>
+      function highLightCode() {
+        int = setInterval(() => {
+          Prism.highlightAll();
+        }, 50);
+      }
 
-    <script src="src/layout/components/specialTypes/config.js"></script>
-    <script src="src/layout/components/specialTypes/methods.js"></script>
-    <script src="src/layout/components/specialTypes/any-type/script.js"></script>
+      window.printAndHighlightCode = function(functionName) {
+        clearJunk();
 
-    <script src="http://localhost:3000/static/lib/prism.js"></script>
-</body>
+        if (functionName) {
+          window.TSNamespace[functionName]();
+        }
 
+        highLightCode();
+      };
+    </script>
+  </body>
 </html>

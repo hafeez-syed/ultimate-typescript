@@ -11,19 +11,15 @@ angular.module("tsbasics", [
   "primitive",
   "special",
   "aliases",
-  "enums",
   "interfaces",
-  "classes",
-  "generics"
+  "classes"
 ]);
 angular.module("es67", []);
 angular.module("primitive", []);
 angular.module("special", []);
 angular.module("aliases", []);
-angular.module("enums", []);
 angular.module("interfaces", []);
 angular.module("classes", []);
-angular.module("generics", []);
 
 var srcDir = "./components/";
 
@@ -59,3 +55,18 @@ require(srcDir + "specialTypes/9-typed-functions-and-default-params");
 require(srcDir + "specialTypes/10-object-types");
 require(srcDir + "specialTypes/11-array-types-generics");
 require(srcDir + "specialTypes/12-tuple-types-for-arrays");
+
+// Type Aliases and Assertions
+require(srcDir + "aliases/config");
+require(srcDir + "aliases/methods");
+require(srcDir + "aliases/1-type-aliases");
+
+// Diving into Interfaces
+require(srcDir + "interfaces/config");
+require(srcDir + "interfaces/methods");
+require(srcDir + "interfaces/1-creating-interfaces");
+
+// Classess, Properties and Inheritance
+require(srcDir + "classes/config");
+require(srcDir + "classes/methods");
+require(srcDir + "classes/1-classes-and-constructors");

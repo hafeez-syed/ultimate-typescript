@@ -60,6 +60,7 @@ require(srcDir + "specialTypes/12-tuple-types-for-arrays");
 require(srcDir + "aliases/config");
 require(srcDir + "aliases/methods");
 require(srcDir + "aliases/1-type-aliases");
+require(srcDir + "aliases/2-type-assertions");
 
 // Diving into Interfaces
 require(srcDir + "interfaces/config");

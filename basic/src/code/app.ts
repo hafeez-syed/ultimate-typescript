@@ -32,5 +32,6 @@ import "./3-special-types/42-tuple-types-for-arrays";
 import "./4-aliases/41-type-aliases";
 
 import "./5-interfaces/51-creating-interfaces";
+import "./5-interfaces/52-interfaces-function-types";
 
 import "./6-classes/61-classes-and-construtors";

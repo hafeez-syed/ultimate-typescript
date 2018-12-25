@@ -15,7 +15,7 @@ angular
   .component("interfaces", interfaces)
   .config(function($stateProvider) {
     $stateProvider.state("interfaces", {
-      redirectTo: "interfaces.creating",
+      redirectTo: "interfaces.creatingInterfaces",
       url: "/interfaces",
       views: {
         // default view

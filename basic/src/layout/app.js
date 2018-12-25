@@ -65,6 +65,7 @@ require(srcDir + "aliases/1-type-aliases");
 require(srcDir + "interfaces/config");
 require(srcDir + "interfaces/methods");
 require(srcDir + "interfaces/1-creating-interfaces");
+require(srcDir + "interfaces/2-interfaces-with-function-types");
 
 // Classess, Properties and Inheritance
 require(srcDir + "classes/config");

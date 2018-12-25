@@ -1,24 +1,24 @@
-var creatingInterfaces = {
+var interfaceWithFunctionTypes = {
   template: `<div ng-bind-html="myTemplate"></div>`,
   controller: function($scope, $window) {
-    $scope.myTemplate = `<h1>Creating Interfaces</h1>
+    $scope.myTemplate = `<h1>Interfaces with Function Types</h1>
             <pre class="line-numbers language-typescript">
                 <code class="language-typescript">
 				        </code>
 			      </pre>`;
-    window.printAndHighlightCode("creatingInterfaces");
+    window.printAndHighlightCode("interfaceWithFunctionTypes");
   }
 };
 
 angular
   .module("interfaces")
-  .component("creatingInterfaces", creatingInterfaces)
+  .component("interfaceWithFunctionTypes", interfaceWithFunctionTypes)
   .config(function($stateProvider) {
-    $stateProvider.state("interfaces.creatingInterfaces", {
-      url: "/creatingInterfaces",
+    $stateProvider.state("interfaces.interfaceWithFunctionTypes", {
+      url: "/interfaceWithFunctionTypes",
       views: {
         "details@interfaces": {
-          component: "creatingInterfaces"
+          component: "interfaceWithFunctionTypes"
         }
       }
     });

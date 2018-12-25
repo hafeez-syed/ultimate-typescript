@@ -1,5 +1,5 @@
-const creatingInterfaces = function() {
-  console.log("... 1: Creating Interfaces ...");
+const classesConstructor = function() {
+  console.log("... 1: Classes and Constructor ...");
 };
 
-window.TSNamespace.creatingInterfaces = creatingInterfaces;
+window.TSNamespace.classesConstructor = classesConstructor;

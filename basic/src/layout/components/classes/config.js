@@ -1,4 +1,4 @@
-var inteclassesrfaces = {
+var classes = {
   template: `
 		<div class="layout">
 			<div class="layout-methods">

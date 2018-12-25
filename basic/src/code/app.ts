@@ -30,6 +30,7 @@ import "./3-special-types/41-array-types-generics";
 import "./3-special-types/42-tuple-types-for-arrays";
 
 import "./4-aliases/41-type-aliases";
+import "./4-aliases/42-type-assettions";
 
 import "./5-interfaces/51-creating-interfaces";
 import "./5-interfaces/52-interfaces-function-types";

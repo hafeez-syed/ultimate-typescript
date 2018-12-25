@@ -4,9 +4,20 @@ var typeAliases = {
     $scope.myTemplate = `<h1>Type Aliases</h1>
             <pre class="line-numbers language-typescript">
                 <code class="language-typescript">
+                  type Size = "small" | "medium" | "large";
+                  type Callback = (size: Size) => void;
+                
+                  let pizzaSize: string = "small";
+                
+                  const selectSize: Callback = x => {
+                    pizzaSize = x;
+                  };
+                
+                  selectSize("medium");
 
-				</code>
-			</pre>`;
+                  console.log("PizzaSize " + pizzaSize); // medium
+              </code>
+            </pre>`;
     window.printAndHighlightCode("typeAliases");
   }
 };

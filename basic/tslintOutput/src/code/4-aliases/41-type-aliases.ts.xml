@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<checkstyle version="5.7">[6, 35]: ' should be "
+[6, 45]: ' should be "
+[6, 56]: ' should be "
+[10, 14]: ' should be "
+</checkstyle>

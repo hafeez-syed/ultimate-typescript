@@ -68,6 +68,7 @@ require(srcDir + "interfaces/methods");
 require(srcDir + "interfaces/1-creating-interfaces");
 require(srcDir + "interfaces/2-interfaces-with-function-types");
 require(srcDir + "interfaces/3-extending-interfaces");
+require(srcDir + "interfaces/4-interface-with-optional-properties");
 
 // Classess, Properties and Inheritance
 require(srcDir + "classes/config");

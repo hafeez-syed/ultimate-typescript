@@ -102,9 +102,13 @@ body {
 
 .layout-details {
     left: 21%;
-    padding: 25px;
+    padding: 0 25px 25px 25px;
     position: absolute;
     width: 79%;
+}
+
+.layout-details h1 {
+    margin: 0;
 }
 
 .tabs {

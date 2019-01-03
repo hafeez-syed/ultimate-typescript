@@ -4,8 +4,29 @@ var creatingInterfaces = {
     $scope.myTemplate = `<h1>Creating Interfaces</h1>
             <pre class="line-numbers language-typescript">
                 <code class="language-typescript">
-				        </code>
-			      </pre>`;
+                  interface Pizza {
+                    name: string;
+                    sizes: string[];
+                  }
+                
+                  let pizza: Pizza[];
+                
+                  function createPizza(name: string, sizes: string[]): Pizza[] {
+                    const pizzas: Pizza[] = [
+                      {
+                        name,
+                        sizes
+                      }
+                    ];
+                
+                    return pizzas;
+                  }
+                
+                  pizza = createPizza("Pepperoni", ["small", "medium"]);
+                
+                  console.log('pizza: ' + pizza); // pizza: [{"name":"Pepperoni","sizes":["small","medium"]}]
+				</code>
+			</pre>`;
     window.printAndHighlightCode("creatingInterfaces");
   }
 };

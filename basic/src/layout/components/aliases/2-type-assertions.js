@@ -4,7 +4,6 @@ var typeAssertions = {
     $scope.myTemplate = `<h1>Type Assertions</h1>
             <pre class="line-numbers language-typescript">
                 <code class="language-typescript">
-
                   type Pizza = { name: string; toppings: number };
 
                   const pizza: Pizza = { name: "Blazing Inferno", toppings: 5 };

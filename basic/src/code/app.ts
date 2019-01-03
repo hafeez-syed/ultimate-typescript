@@ -34,5 +34,6 @@ import "./4-aliases/42-type-assettions";
 
 import "./5-interfaces/51-creating-interfaces";
 import "./5-interfaces/52-interfaces-function-types";
+import "./5-interfaces/53-extending-interfaces";
 
 import "./6-classes/61-classes-and-construtors";

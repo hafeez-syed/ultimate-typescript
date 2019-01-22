@@ -39,3 +39,11 @@ import "./5-interfaces/54-interface-with-optional-properties";
 import "./5-interfaces/55-interface-with-index-signatures";
 
 import "./6-classes/61-classes-and-construtors";
+import "./6-classes/62-public-and-private-members";
+import "./6-classes/63-readonly-members";
+import "./6-classes/64-setters-and-getters";
+import "./6-classes/65-class-inheritance";
+import "./6-classes/66-abstract-classes";
+import "./6-classes/67-protected-members-and-inheritance";
+import "./6-classes/68-interface-contracts-and-implements";
+import "./6-classes/69-static-properties-and-members";

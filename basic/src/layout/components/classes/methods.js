@@ -18,7 +18,7 @@ var classesMethods = {
 					<a ui-sref="classes.classInheritance">Class Inheritance</a>
 				</li>
 				<li ui-sref-active="active-menu">
-					<a ui-sref="classes.abstrctClasses">Abstract Classes</a>
+					<a ui-sref="classes.abstractClasses">Abstract Classes</a>
 				</li>
 				<li ui-sref-active="active-menu">
 					<a ui-sref="classes.protectedMembers">Protected Members and Inheritance</a>

@@ -2,7 +2,8 @@ const settersAndGetters = function() {
   console.log("... 4: Setters and Getters [Accessors] ...");
 
   class Sizes {
-    sizes: string[] = ["small", "medium"];
+    constructor(public sizes: string[]) {
+    }
 
     get availableSizes() {
       return this.sizes;
@@ -13,7 +14,7 @@ const settersAndGetters = function() {
     }
   }
 
-  let sizes = new Sizes();
+  let sizes = new Sizes(["small", "medium"]);
 
   // getter
   console.log(sizes.availableSizes); // ["small", "medium"]

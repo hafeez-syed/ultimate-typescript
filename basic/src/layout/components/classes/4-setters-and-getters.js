@@ -5,7 +5,8 @@ var gettersSetters = {
             <pre class="line-numbers language-typescript">
                 <code class="language-typescript">
                   class Sizes {
-                      sizes: string[] = ["small", "medium"];
+                      constructor(public sizes: string[]) {
+                      }
                   
                       get availableSizes() {
                         return this.sizes;
@@ -16,7 +17,7 @@ var gettersSetters = {
                       }
                     }
                   
-                    let sizes = new Sizes();
+                    let sizes = new Sizes(["small", "medium"]);
                   
                     // getter
                     console.log(sizes.availableSizes); // ["small", "medium"]

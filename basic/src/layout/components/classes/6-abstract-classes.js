@@ -1,10 +1,10 @@
-var classInheritance = {
+var abstractClasses = {
   template: `<div ng-bind-html="myTemplate"></div>`,
-  controller: function($scope) {
-    $scope.myTemplate = `<h1>Classes Inheritance</h1>
+  controller: function($scope, $window) {
+    $scope.myTemplate = `<h1>Understanding Classes and Constructor</h1>
             <pre class="line-numbers language-typescript">
                 <code class="language-typescript">
-                  class Sizes {
+                  abstract class Sizes {
                       constructor(public sizes: string[]) {
                       }
                   
@@ -16,7 +16,10 @@ var classInheritance = {
                         this.sizes = sizes;
                       }
                     }
-                  
+                    
+                    // Cannot create an instance of an abstract class
+                    // new Sizes(['small']);
+                    
                     class Pizza extends Sizes {
                       public toppings: string[] = [];
                   
@@ -37,19 +40,19 @@ var classInheritance = {
                     console.log(pizza.availableSizes); // ["large", "family"]
 				</code>
 			</pre>`;
-    window.printAndHighlightCode("classInheritance");
+    window.printAndHighlightCode("abstractClasses");
   }
 };
 
 angular
   .module("classes")
-  .component("classInheritance", classInheritance)
+  .component("abstractClasses", abstractClasses)
   .config(function($stateProvider) {
-    $stateProvider.state("classes.classInheritance", {
-      url: "/classInheritance",
+    $stateProvider.state("classes.abstractClasses", {
+      url: "/abstractClasses",
       views: {
         "details@classes": {
-          component: "classInheritance"
+          component: "abstractClasses"
         }
       }
     });

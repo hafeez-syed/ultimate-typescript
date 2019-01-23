@@ -14,7 +14,7 @@ const abstractClasses = function() {
     }
   }
 
-  // Cannot create an instance of an abstract class
+  // Cannot create an instance of an abstract class however it can be extended to a child class
   // new Sizes(['small']);
 
   class Pizza extends Sizes {

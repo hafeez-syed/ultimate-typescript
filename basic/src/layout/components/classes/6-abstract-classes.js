@@ -1,7 +1,7 @@
 var abstractClasses = {
   template: `<div ng-bind-html="myTemplate"></div>`,
-  controller: function($scope, $window) {
-    $scope.myTemplate = `<h1>Understanding Classes and Constructor</h1>
+  controller: function($scope) {
+    $scope.myTemplate = `<h1>Abstract Classes</h1>
             <pre class="line-numbers language-typescript">
                 <code class="language-typescript">
                   abstract class Sizes {

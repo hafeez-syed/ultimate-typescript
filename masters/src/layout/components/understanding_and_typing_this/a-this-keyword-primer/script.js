@@ -28,7 +28,7 @@ var thisTyping = {
                 </code>
             </pre>
         </div>`,
-	controller: function ($window) {
+	controller: function () {
 		aThisKeywordPrimer();
 		window.highlightCode();
 	}

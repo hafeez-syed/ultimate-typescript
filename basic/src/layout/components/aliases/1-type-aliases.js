@@ -1,6 +1,6 @@
 var typeAliases = {
   template: `<div ng-bind-html="myTemplate"></div>`,
-  controller: function($scope, $window) {
+  controller: function($scope) {
     $scope.myTemplate = `<h1>Type Aliases</h1>
             <pre class="line-numbers language-typescript">
                 <code class="language-typescript">

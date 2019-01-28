@@ -1,6 +1,6 @@
 var interfaceWithFunctionTypes = {
   template: `<div ng-bind-html="myTemplate"></div>`,
-  controller: function($scope, $window) {
+  controller: function($scope) {
     $scope.myTemplate = `<h1>Interfaces with Function Types</h1>
             <pre class="line-numbers language-typescript">
                 <code class="language-typescript">

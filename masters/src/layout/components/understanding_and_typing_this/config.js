@@ -9,8 +9,6 @@ var this_typing = {
 	`
 };
 
-this_typing.$inject = ['$window'];
-
 angular
     .module('this')
     .component('this', this_typing)

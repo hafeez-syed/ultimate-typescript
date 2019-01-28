@@ -1,6 +1,6 @@
 var interfaceOptionalProperties = {
   template: `<div ng-bind-html="myTemplate"></div>`,
-  controller: function($scope, $window) {
+  controller: function($scope) {
     $scope.myTemplate = `<h1>Interface with Optional Properties (property?: value) </h1>
             <pre class="line-numbers language-typescript">
                 <code class="language-typescript">
